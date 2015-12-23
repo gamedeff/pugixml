@@ -14,8 +14,11 @@
 #ifndef HEADER_PUGICONFIG_HPP
 #define HEADER_PUGICONFIG_HPP
 
-// Uncomment this to enable wchar_t mode
-// #define PUGIXML_WCHAR_MODE
+//#if defined(UNICODE) || defined(_UNICODE)
+//#	ifdef _WIN32
+//#		define PUGIXML_WCHAR_MODE
+//#	endif
+//#endif
 
 // Uncomment this to disable XPath
 // #define PUGIXML_NO_XPATH
